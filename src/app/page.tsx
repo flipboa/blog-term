@@ -14,7 +14,11 @@ export default function Index() {
   return (
     <main>
       <Container>
-        <Intro />
+        <div className="flex justify-end mt-4">
+          <a href="#latest" className="text-sm font-medium text-blue-600 hover:text-blue-700 hover:underline">
+            最新文章
+          </a>
+        </div>
         <HeroPost
           title={heroPost.title}
           coverImage={heroPost.coverImage}
